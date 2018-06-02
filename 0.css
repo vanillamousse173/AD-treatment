@@ -56,7 +56,6 @@ p{
   margin:60px auto;
   border-radius: 20px;
   text-align: center;
-  font-size: 24px;
 }
 
 .bchat p{
@@ -108,7 +107,6 @@ p{
   margin:0px auto;  
 }
 .specs{
-  height: 300px;
   background-color: #F4C580;
   padding: 20px 30px;
   margin: 20px;
@@ -137,15 +135,25 @@ p{
   width:70%;
   padding:10px 10px;
   margin:0px auto;  
-  background-color: #FC9E68;
-  border-radius: 20px;
-  text-align: center;
 }
 
 .talk img{
   height: 200px;
   margin: 0 auto;
 }
+
+.bbhat{
+  background-color: #FC9E68;
+  width:70%;
+  padding:20px;
+  margin:60px auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bbhat p{
+  font-size: 24px;
+  }
 
 .footer{
   padding:5px;
