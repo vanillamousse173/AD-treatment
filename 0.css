@@ -1,10 +1,66 @@
 body{
 	font-family:Verdana, Geneva, sans-serif, sourcehansans-tc-normal;
 	color:#6B6167;
-	margin:0;
-	padding:0;
+  	margin: 0 auto;
+  	padding: 0;
+  	height: 100%;
 	background:#EBE0D2;
 }
 h2{
 	font-family:sourcehansans-tc-medium;
+  padding:30px 0px;
+  line-height: 36px;
 }
+
+p{
+  font-size:18px;
+  padding:0px 0px 80px 0px;
+}
+
+.banner{
+	width:100%;
+  margin:0px auto;	
+}
+
+.down{
+  margin:0px auto;
+  padding:5px;
+  width:80px;
+  -moz-animation: down 1s infinite;
+  -webkit-animation: down 1s infinite;
+  animation: down 1s infinite;
+}
+
+@keyframes down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.down img{
+	width:80%;
+}
+
+.down:hover{
+	cursor:pointer;
+	opacity:0.7;
+}
+
+.bchat{
+  background-color: #FC9E68;
+  width:70%;
+  padding:80px auto;
+  margin:0 auto;
+  border-radius: 20px;
+}
+
+.chat{
+  clear: both;
+  width:70%;
+  padding:80px 0px;
+  margin:0 auto;
+}
+
