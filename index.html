@@ -13,35 +13,111 @@ $(document).ready(function(){
 
 	//Click event to scroll to top
 
-	$('.ar').click(function(){
+	$('.down').click(function(){
 
-		$('html, body').animate({scrollTop : 560},800);
-
-		return false;
-
-	});
-
-
-	$('.gototop').click(function(){
-
-		$('html, body').animate({scrollTop : 0},800);
+		$('html, body').animate({scrollTop : 460},800);
 
 		return false;
 
 	});
-
 	});
 </script>
+<script type="text/javascript">
+ function play_single_sound() {
+document.getElementById('audiotag1').play(); /* document.getElementById('audiotag1'): 抓取html元素中id名為audiotag的element。 並利用抓取到的物件呼叫play函式播放audio。 */
+ }
+ function pause_single_sound() {
+document.getElementById('audiotag1').pause();
+ }
 
+ function play_single_sound() {
+document.getElementById('audiotag2').play(); 
+ }
+ function pause_single_sound() {
+document.getElementById('audiotag2').pause();
+ }
+</script>
 </head>
 <body>
 	<div class="banner">
 	<img src="img/ban.png" width="60%" /></div>
 	<div class="bchat">
-		<p>臺灣有超過兩百萬名異位性皮膚炎患者，療法也相當多元。
-傳統的中、西醫治療方式有什麼不同?有哪些特別的療法值得一試呢?</p>
+		<p>臺灣有超過兩百萬名異位性皮膚炎患者，療法也相當多元。<br>傳統的中、西醫治療方式有什麼不同？有哪些特別的療法值得一試呢？</p>
 	</div>
-	<div class="down"><img src="arrow.png"></div>
-
+<div class="down"><img src="arrow.png"></div>
+<div class="chat">
+	<h1>聽聽西醫怎麼說？</h1>
+	<div class="col-3">
+		<img src="img/dr.png" width="80%" alt="dr">
+		<p>臺大皮膚科醫師<br>賴碧芬</p>
+	</div>
+	<div class="col-9"><p>異位性皮膚炎痊癒的時段大致分為兩階段，其一為國小時期，第二則為國高中時期。若在此兩階段未能完全痊癒便較難再痊癒。主要治療方式分為含類固醇藥膏及口服藥、不含類固醇之藥，如抗組織胺，以及乳液。在病症更加嚴種時則會採取生物科技療法。而所有藥物都具副作用，醫生只能協助挑選益處最高、壞處最低的藥，仍需持續追蹤。</p>
+	<audio id="audiotag1" src="audio/west.mp3" preload="auto"></audio>
+	<a href="javascript:play_single_sound();"><img src="play.png" width="50px"alt="play"></a> <!-- 呼叫javascript中的play_single_sound函式 -->
+	<a href="javascript:pause_single_sound();"><img src="stop.png" width="50px"alt="stop"></a>
+	</div>
+</div>
+<div class="line">
+	<div class="col-4"><div class="pic"><img src="img/la.png"></div><h2>抗組織胺</h2><p>抗組織胺能減輕身體對過敏原所產生的過敏反應，避免惡性循環，但無法使症狀完全痊癒。然而常見的副作用為導致患者精神不佳。</p></div>
+	<div class="col-4"><div class="pic"><img src="img/m.png"></div><h2>類固醇</h2><p>具有抗發炎、抗搔癢的作用，依病情輕至重可使用外用藥膏、口服藥物與針劑進行治療。但若類固醇藥物用量太多可能導致皮膚變薄、水腫、長青春痘、患部毛髮生長變濃密等副作用。</p></div>
+	<div class="col-4"><div class="pic"><img src="img/lo.png"></div><h2>乳液</h2><p>大多使用凡士林及無香精乳液，因異位性皮膚炎患者皮膚保護膜易有損傷，皮膚無法維持水分，因此使用乳液可在皮膚表面形成保護膜，可減輕癢感，並減緩因搔癢而導致皮膚表面紅腫等情形。</p></div>
+</div>
+<div class="chat">
+	<h1>聽聽中醫怎麼說？</h1>
+	<div class="col-3">
+		<img src="img/mdr.png" width="60%" alt="mdr">
+		<p>臺北市立聯合醫院中醫師<br>洪舒玨</p>
+	</div>
+	<div class="col-9">
+		<p>以中醫角度來說，並無異位性皮膚炎之說法，統稱皮膚病。中醫主要依據體質進行治療，皮膚病可分為病症僅表現於表層或是體內出現問題進而表現於皮膚兩種不同的體質，中醫認為體內問題產生的皮膚病多是因為風熱濕熱等，患者大多為小朋友。因此服用藥物並非以處理皮膚表面問題為主，而是針對體內排濕毒，進而改變體質。</p>
+		<audio id="audiotag2" src="audio/chinese.mp3" preload="auto"></audio>
+		<a href="javascript:play_single_sound();"><img src="play.png" width="50px"alt="play"></a>
+		<a href="javascript:pause_single_sound();"><img src="stop.png" width="50px"alt="stop"></a>
+	</div>
+</div>
+<div class="line">
+	<div class="col-4"><div class="pic"><img src="img/her.png" ></div><h2>「表」的風熱</h2><p>一般來說僅有皮膚表面之問題，並無大小便、胃口體種種體內問題，因此常會使用桂枝、薄荷、消風散等表層藥物為主。</p></div>
+	<div class="col-4"><div class="pic"><img src="img/he.png"></div><h2>「裡」的風熱</h2><p>通常對象為體內易燥熱的幼童，一般來說常有排便不順、盜汗、乾渴、一直抓等病症，因體內現象而引起之皮膚病，會使用幫助排熱的藥，如：小柴胡湯、梔子、石膏、白芍等。</p></div>
+	<div class="col-4"><div class="pic"><img src="img/sp.png"></div><h2>薏仁湯</h2><p>薏仁具有利濕排毒的功能，又無過冷的問題，可以每天食用，熱薏仁湯則可幫助身體排除過敏原，加上薏仁方便取得，因此可謂異位性皮膚炎食療的首選。</p></div>
+</div>
+<div class="special">
+	<h1>其他特殊療法</h1>
+	<div class="col-3"><div class="pic1"><img src="img/jp.png"></div></div>
+	<div class="col-9">
+		<h2>丹羽療法</h2>
+		<div class="specs"><p>近年竄紅的丹羽療法需到日本高知縣的土佐清水病院執行，使用磁石浴、專用藥膏，搭配飲食療法。</p>
+		<p>每日兩次磁石浴後，讓身體冷卻一段時間全身塗抹藥膏並用繃帶包裹。療程長度視患者情況而定，輕則一周內可結束，重則長達一個月。</p>
+		<p>而丹羽飲食近似「海鮮素」，豬肉、雞肉、乳製品一律不能吃，輕度患者一周可吃一次只有瘦肉的牛肉。即使療程結束仍遵照其飲食規範才能有效控制病情。</p></div>
+	</div>
+	<div class="col-3"><div class="pic1"><img src="img/wa.png"></div></div>
+	<div class="col-9">
+		<h2>漂白水療法</h2>
+		<div class="specs"><p>高雄醫學大學附設醫院自2017年開始收治嚴重的異位性皮膚炎患者以及對傳統治療反應不佳的患者進行漂白水水療。根據高醫研究，漂白水療法能改變皮膚屏障功能的基因表現，使異位性皮膚炎患者的皮膚狀態回歸正常。</p>
+		<p>雖然使用漂白水泡澡能有效改善皮膚發炎狀況，但醫生仍不建議患者在未諮詢醫師的狀況下獨自執行，錯誤的漂白水濃度或不專業的操作方式可能造成反效果。</p></div>
+	</div>
+	<div class="col-3"><div class="pic1"><img src="img/ba.png"></div></div>
+	<div class="col-9">
+		<h2>濕敷療法</h2>
+		<div class="specs"><p>濕敷療法可說是最方便、居家可行的治療方式。先用溫水泡澡或沖澡5至10分鐘，接著在患部塗抹醫師認可的藥膏或保濕產品，以浸濕的布料或袖套覆蓋，再包上一層乾的布料。</p>
+		<p>濕敷的重點在於把藥物及保濕成分密封在患處，幫助藥品的吸收，並隔絕外界的刺激。但若藥物吸收過量，可能產生不良反應，因此務必在醫生的指導下確認藥物劑量與濕敷的時間長度。</p></div>
+	</div>
+	<div class="col-3"><div class="pic1"><img src="img/8e707a9aaa89793c310244ad6ac52e00.png"></div></div>
+	<div class="col-9">
+		<h2>光照療法</h2>
+		<div class="specs"><p>光照治療是以特定波長的光穿透皮膚表層，刺激細胞活性或促使細胞凋零，進而激發皮膚的自我修復能力，異位性皮膚炎患者通常以紫外A光（長波紫外線）及B光（中波紫外線）治療。</p>
+		<p>光照療法最常見的副作用就是曬黑，少數可能造成局部曬傷，但是極少發生。較多人的疑慮是長期接受光照治療是否會增加罹患皮膚癌的機率，但研究證實目前最常使用的紫外B光不會對黃種人產生影響，但會使白種罹患皮膚癌的機率微幅上升。</p></div>
+	</div>
+</div>
+<div class="talk">
+	<h2>聽聽患者怎麼說（點擊圖片聆聽）</h2>
+	<div class="col-6"><img src="img/SUGA.png"><h2>曾先生，接受過西醫治療</h2></div>
+	<div class="col-6"><img src="img/gr.png"><h2>王小姐，接受過西醫治療</h2></div>
+	<div class="col-6"><img src="img/2.png"><h2>廖先生，接受過西醫治療</h2></div>
+	<div class="col-6"><img src="img/4.png"><h2>王先生，接受過西醫治療</h2></div>	
+</div>
+<div class="bchat">
+	<p>雖然異位性皮膚炎的療法很多種，但還是要根據自己的病情找到適合自己的療法，並且在醫師的專業指導下進行，才能有效改善異位性皮膚炎！</p>
+</div>
+<div class="footer"><p>&copy; 2018《喀報》第292期專題<a href="http://castnet.nctu.edu.tw/castnet/article/12833?issueID=695">【過敏之島：異位性皮膚炎】</a>系列作品</p></div>
 </body>
 </html>

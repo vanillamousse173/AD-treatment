@@ -1,25 +1,24 @@
 body{
-	font-family:Verdana, Geneva, sans-serif, sourcehansans-tc-normal;
+	font-family:Verdana, Geneva, sans-serif,"微軟正黑體",sourcehansans-tc;
 	color:#6B6167;
-  	margin: 0 auto;
-  	padding: 0;
-  	height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
 	background:#EBE0D2;
 }
 h2{
-	font-family:sourcehansans-tc-medium;
-  padding:30px 0px;
-  line-height: 36px;
+  padding:10px 0px;
+  line-height: 18px;
 }
 
 p{
-  font-size:18px;
-  padding:0px 0px 80px 0px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .banner{
 	width:100%;
-  margin:0px auto;	
+  margin:0 auto;	
 }
 
 .down{
@@ -36,12 +35,13 @@ p{
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
 }
 
 .down img{
 	width:80%;
+  margin:0px auto;
 }
 
 .down:hover{
@@ -52,15 +52,113 @@ p{
 .bchat{
   background-color: #FC9E68;
   width:70%;
-  padding:80px auto;
-  margin:0 auto;
+  padding:20px;
+  margin:60px auto;
   border-radius: 20px;
+  text-align: center;
+  font-size: 24px;
 }
+
+.bchat p{
+  font-size: 24px;
+  }
 
 .chat{
   clear: both;
   width:70%;
-  padding:80px 0px;
-  margin:0 auto;
+  padding:10px 10px;
+  margin:0px auto;
 }
 
+.pic{
+  width: 200px;
+  height: 200px;
+  background-color: #FC9E68;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.line{
+  clear: both;
+  width:70%;
+  padding:60px 20px;
+  margin:0px auto;
+}
+
+.line h2{
+  text-align: center;
+}
+
+.line p{
+  height: 300px;
+  background-color: #F4C580;
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+
+.line img{
+  height: 100px;
+  margin: auto;
+}
+
+.special{
+  clear: both;
+  width:70%;
+  padding:10px 10px;
+  margin:0px auto;  
+}
+.specs{
+  height: 300px;
+  background-color: #F4C580;
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.special h2{
+  margin: 0 20px;
+}
+
+.special img{
+  height: 120px;
+  margin: 0 auto;
+}
+
+.pic1{
+  width: 250px;
+  height: 250px;
+  background-color: #FC9E68;
+  border-radius: 125px;
+  margin: 0 auto;
+}
+
+.talk{
+  clear: both;
+  width:70%;
+  padding:10px 10px;
+  margin:0px auto;  
+  background-color: #FC9E68;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.talk img{
+  height: 200px;
+  margin: 0 auto;
+}
+
+.footer{
+  padding:5px;
+  width:100%;
+  background:#B3acb2;
+}
+
+.footer p{
+  font-size: 10pt;
+  text-align:center;
+}
+
+.footer a{
+  text-decoration: none;
+  color:#6B6167;
+}
