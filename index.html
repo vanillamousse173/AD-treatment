@@ -41,6 +41,10 @@ document.getElementById('audiotag2').pause();
 document.getElementById('audiotag3').play(); 
  }
 
+  function pause_single_sound3() {
+document.getElementById('audiotag3').pause();
+ }
+
   function play_single_sound4() {
 document.getElementById('audiotag4').play(); 
  }
@@ -126,7 +130,7 @@ document.getElementById('audiotag6').play();
 	<h1>聽聽患者怎麼說？（點擊圖片聆聽）</h1>
 	<div class="col-3">	
 		<audio id="audiotag3" src="audio/nen.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound3();"><img src="img/SUGA.png"></a><h2>曾先生，接受過西醫治療</h2></div>
+		<a href="javascript:play_single_sound3();"><a href="javascript:pause_single_sound3();"><img src="img/SUGA.png"></a></a><h2>曾先生，接受過西醫治療</h2></div>
 	<div class="col-3">
 		<audio id="audiotag4" src="audio/msw.mp3" preload="auto"></audio>
 		<a href="javascript:play_single_sound4();"><img src="img/gr.png"></a><h2>王小姐，接受過丹羽治療</h2></div>
