@@ -23,18 +23,31 @@ $(document).ready(function(){
 	});
 </script>
 <script type="text/javascript">
- function play_single_sound() {
+ function play_single_sound1() {
 document.getElementById('audiotag1').play(); /* document.getElementById('audiotag1'): 抓取html元素中id名為audiotag的element。 並利用抓取到的物件呼叫play函式播放audio。 */
  }
- function pause_single_sound() {
+ function pause_single_sound1() {
 document.getElementById('audiotag1').pause();
  }
 
- function play_single_sound() {
+ function play_single_sound2() {
 document.getElementById('audiotag2').play(); 
  }
- function pause_single_sound() {
+ function pause_single_sound2() {
 document.getElementById('audiotag2').pause();
+ }
+
+  function play_single_sound3() {
+document.getElementById('audiotag3').play(); 
+ }
+  function play_single_sound4() {
+document.getElementById('audiotag4').play(); 
+ }
+  function play_single_sound5() {
+document.getElementById('audiotag5').play(); 
+ }
+  function play_single_sound6() {
+document.getElementById('audiotag6').play(); 
  }
 </script>
 </head>
@@ -53,8 +66,8 @@ document.getElementById('audiotag2').pause();
 	</div>
 	<div class="col-9"><p>異位性皮膚炎痊癒的時段大致分為兩階段，其一為國小時期，第二則為國高中時期。若在此兩階段未能完全痊癒便較難再痊癒。主要治療方式分為含類固醇藥膏及口服藥、不含類固醇之藥，如抗組織胺，以及乳液。在病症更加嚴種時則會採取生物科技療法。而所有藥物都具副作用，醫生只能協助挑選益處最高、壞處最低的藥，仍需持續追蹤。</p>
 	<audio id="audiotag1" src="audio/west.mp3" preload="auto"></audio>
-	<a href="javascript:play_single_sound();"><img src="play.png" width="50px"alt="play"></a> <!-- 呼叫javascript中的play_single_sound函式 -->
-	<a href="javascript:pause_single_sound();"><img src="stop.png" width="50px"alt="stop"></a>
+	<a href="javascript:play_single_sound1();"><img src="play.png" width="50px"alt="play"></a> <!-- 呼叫javascript中的play_single_sound函式 -->
+	<a href="javascript:pause_single_sound1();"><img src="stop.png" width="50px"alt="stop"></a>
 	</div>
 </div>
 <div class="line">
@@ -71,8 +84,8 @@ document.getElementById('audiotag2').pause();
 	<div class="col-9">
 		<p>以中醫角度來說，並無異位性皮膚炎之說法，統稱皮膚病。中醫主要依據體質進行治療，皮膚病可分為病症僅表現於表層或是體內出現問題進而表現於皮膚兩種不同的體質，中醫認為體內問題產生的皮膚病多是因為風熱濕熱等，患者大多為小朋友。因此服用藥物並非以處理皮膚表面問題為主，而是針對體內排濕毒，進而改變體質。</p>
 		<audio id="audiotag2" src="audio/chinese.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound();"><img src="play.png" width="50px"alt="play"></a>
-		<a href="javascript:pause_single_sound();"><img src="stop.png" width="50px"alt="stop"></a>
+		<a href="javascript:play_single_sound2();"><img src="play.png" width="50px"alt="play"></a>
+		<a href="javascript:pause_single_sound2();"><img src="stop.png" width="50px"alt="stop"></a>
 	</div>
 </div>
 <div class="line">
@@ -112,16 +125,16 @@ document.getElementById('audiotag2').pause();
 	<h2>聽聽患者怎麼說（點擊圖片聆聽）</h2>
 	<div class="col-6">	
 		<audio id="audiotag3" src="audio/nen.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound();"><img src="img/SUGA.png"></a><h2>曾先生，接受過西醫治療</h2></div>
+		<a href="javascript:play_single_sound3();"><img src="img/SUGA.png"></a><h2>曾先生，接受過西醫治療</h2></div>
 	<div class="col-6">
 		<audio id="audiotag4" src="audio/msw.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound();"><img src="img/gr.png"></a><h2>王小姐，接受過西醫治療</h2></div>
+		<a href="javascript:play_single_sound4();"><img src="img/gr.png"></a><h2>王小姐，接受過丹羽治療</h2></div>
 	<div class="col-6">
 		<audio id="audiotag5" src="audio/liao.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound();"><img src="img/2.png"></a><h2>廖先生，接受過西醫治療</h2></div>
+		<a href="javascript:play_single_sound5();"><img src="img/2.png"></a><h2>廖先生，接受過中醫治療</h2></div>
 	<div class="col-6">
 		<audio id="audiotag6" src="audio/mrw.mp3" preload="auto"></audio>
-		<a href="javascript:play_single_sound();"><img src="img/4.png"></a>	<h2>王先生，接受過西醫治療</h2></div>	
+		<a href="javascript:play_single_sound6();"><img src="img/4.png"></a>	<h2>王先生，接受過丹羽治療</h2></div>	
 </div>
 <div class="bbhat">
 	<p>雖然異位性皮膚炎的療法很多種，但還是要根據自己的病情找到適合自己的療法，<br>並且在醫師的專業指導下進行，才能有效改善異位性皮膚炎！</p>
