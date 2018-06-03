@@ -1,7 +1,7 @@
 body{
 	font-family:Verdana, Geneva, sans-serif,"微軟正黑體";
 	color:#6B6167;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   height: 100%;
 	background:#EBE0D2;
@@ -18,7 +18,17 @@ p{
 
 .banner{
 	width:100%;
+  height: 300px;
   margin:0 auto;	
+}
+
+.banner img{
+  width: 80%;
+  margin: 60px auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(0%);
 }
 
 .down{
@@ -96,13 +106,17 @@ p{
 }
 
 .line img{
-  height: 100px;
+  height: 80%;
   margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .special{
   clear: both;
-  width:80%;
+  width:70%;
   padding:10px 10px;
   margin:0px auto;  
 }
@@ -117,17 +131,21 @@ p{
   margin: 0 20px;
 }
 
-.special img{
-  height: 120px;
-  margin: 0 auto;
-}
-
 .pic1{
   width: 250px;
   height: 250px;
   background-color: #FC9E68;
   border-radius: 125px;
   margin: 0 auto;
+}
+
+.pic1 img{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .talk{
@@ -141,6 +159,10 @@ p{
   height: 200px;
   margin: 0 auto;
 }
+
+.talk h2{
+  line-height: 36px;
+  }
 
 .bbhat{
   background-color: #FC9E68;
