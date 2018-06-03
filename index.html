@@ -37,48 +37,15 @@ document.getElementById('audiotag2').play();
 document.getElementById('audiotag2').pause();
  }
 
-var isPlaying_3 = false;
-var isPlaying_4 = false;
-var isPlaying_5 = false;
-var isPlaying_6 = false;
-
-function toggle_single_sound3() {
-	if (isPlaying_3) {
-		document.getElementById('audiotag3').pause();
-		isPlaying_3 = false;
+function toggle_sound(audio_id) {
+	let audio = document.getElementById(audio_id);
+	if (audio.paused || audio.ended) {
+		audio.play();
 	} else {
-		document.getElementById('audiotag3').play(); 
-		isPlaying_3 = true;
-	}	
+		audio.pause();
+	}
  }
 
-function toggle_single_sound4() {
-	if (isPlaying_4) {
-		document.getElementById('audiotag4').pause();
-		isPlaying_4 = false; 
-	} else {
-		document.getElementById('audiotag4').play(); 
-		isPlaying_4 = true;
-	}	
-}
-function toggle_single_sound5() {
-	if (isPlaying_5) {
-		document.getElementById('audiotag5').pause();
-		isPlaying_5 = false; 
-	} else {
-		document.getElementById('audiotag5').play(); 
-		isPlaying_5 = true;
-	}	
-}
-function toggle_single_sound6() {
-	if (isPlaying_6) {
-		document.getElementById('audiotag6').pause();
-		isPlaying_6 = false; 
-	} else {
-		document.getElementById('audiotag6').play(); 
-		isPlaying_6 = true;
-	}
-}
 </script>
 </head>
 <body>
@@ -155,16 +122,24 @@ function toggle_single_sound6() {
 	<h1>聽聽患者怎麼說？（點擊圖片聆聽）</h1>
 	<div class="col-3">	
 		<audio id="audiotag3" src="audio/nen.mp3" preload="auto"></audio>
-		<a href="javascript:toggle_single_sound3();"><img src="img/SUGA.png"></a><h2>曾先生，接受過西醫治療</h2></div>
+		<img src="img/SUGA.png" onclick="toggle_sound('audiotag3');">
+		<h2>曾先生，接受過西醫治療</h2>
+	</div>
 	<div class="col-3">
 		<audio id="audiotag4" src="audio/msw.mp3" preload="auto"></audio>
-		<a href="javascript:toggle_single_sound4();"><img src="img/gr.png"></a><h2>王小姐，接受過丹羽治療</h2></div>
-	<div class="col-3">
+		<img src="img/gr.png" onclick="toggle_sound('audiotag4');">
+		<h2>王小姐，接受過丹羽治療</h2>
+	</div>
+	<div class="col-3" >
 		<audio id="audiotag5" src="audio/liao.mp3" preload="auto"></audio>
-		<a href="javascript:toggle_single_sound5();"><img src="img/2.png"></a><h2>廖先生，接受過中醫治療</h2></div>
+		<img src="img/2.png" onclick="toggle_sound('audiotag5');">
+		<h2>廖先生，接受過中醫治療</h2>
+	</div>
 	<div class="col-3">
 		<audio id="audiotag6" src="audio/mrw.mp3" preload="auto"></audio>
-		<a href="javascript:toggle_single_sound6();"><img src="img/4.png"></a>	<h2>王先生，接受過丹羽治療</h2></div>	
+		<img src="img/4.png" onclick="toggle_sound('audiotag6');">
+		<h2>王先生，接受過丹羽治療</h2>
+	</div>
 </div>
 <div class="bbhat">
 	<p>雖然異位性皮膚炎的療法很多種，但還是要根據自己的病情找到適合自己的療法，<br>並且在醫師的專業指導下進行，才能有效改善異位性皮膚炎！</p>
